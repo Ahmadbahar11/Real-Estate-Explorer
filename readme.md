@@ -1,4 +1,4 @@
-# 🏡 Real Estate Explorer
+# Real Estate Explorer
 
 > A **high-performance**, map-first real estate ecosystem engineered with **Next.js 16** and **Tailwind CSS 4**, delivering a seamless, **enterprise-grade** property discovery experience.
 
@@ -38,25 +38,25 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 - **State-of-the-Art Security**: JWT-based authentication with **highly secure**, persistent session management.
 - **Pixel-Perfect Responsiveness**: Adaptive UI with fluid layouts and high-performance skeleton loading states.
 
-> 🔒 **Note:** This is a proprietary, company-confidential project built for a private client. Source code and deployment are for internal use only.
+> **Note:** This is a proprietary, company-confidential project built for a private client. Source code and deployment are for internal use only.
 
 ### Who Is It For?
 
 | User Type | What They Can Do |
 |---|---|
-| 🏠 Buyers / Renters | Search and browse properties via map or list view, filter by city, type, and price |
-| 🏢 Agents & Agencies | Create a profile, list properties, and manage ads |
-| 👁️ Visitors | Explore societies, view property details, and contact agents |
+| Buyers / Renters | Search and browse properties via map or list view, filter by city, type, and price |
+| Agents & Agencies | Create a profile, list properties, and manage ads |
+| Visitors | Explore societies, view property details, and contact agents |
 
 ---
 
 ## Assets
 
-> 📸 Add your images to the `assets/` folder in the project root and they will render automatically below.
+> Add your images to the `assets/` folder in the project root and they will render automatically below.
 
 ---
 
-### 🏠 Hero / Home Page
+### Hero / Home Page
 <p align="center">
   <img src="./assets/Home-Page-Main.png" alt="Hero Section" width="100%" />
 </p>
@@ -65,7 +65,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 🗺️ Interactive Map
+### Interactive Map
 <p align="center">
   <img src="./assets/Map-Section.png" alt="Interactive Map" width="100%" />
 </p>
@@ -74,7 +74,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 🔍 Map Filters
+### Map Filters
 <p align="center">
   <img src="./assets/Property-Maps-Sections.png" alt="Map Filters" width="100%" />
 </p>
@@ -83,7 +83,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 🏘️ Property Listings
+### Property Listings
 <p align="center">
   <img src="./assets/Project-page.png" alt="Property Listings" width="100%" />
 </p>
@@ -92,7 +92,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 📄 Property Detail
+### Property Detail
 <p align="center">
   <img src="./assets/Detail-Society-Page.png" alt="Property Detail" width="100%" />
 </p>
@@ -101,7 +101,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 💎 Premium Properties
+### Premium Properties
 <p align="center">
   <img src="./assets/Featured-Properties-Section.png" alt="Premium Listings" width="100%" />
 </p>
@@ -110,7 +110,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 👥 Agents Directory
+### Agents Directory
 <p align="center">
   <img src="./assets/Agent-Page.png" alt="Agents Directory" width="100%" />
 </p>
@@ -119,7 +119,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 🏢 Agency Profile
+### Agency Profile
 <p align="center">
   <img src="./assets/Agent-Profile.png" alt="Agency Profile" width="100%" />
 </p>
@@ -128,7 +128,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 🏙️ Societies
+### Societies
 <p align="center">
   <img src="./assets/Societies-Section.png" alt="Societies Page" width="100%" />
 </p>
@@ -137,7 +137,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 🔐 Login
+### Login
 <p align="center">
   <img src="./assets/Auth.png" alt="Login Screen" width="100%" />
 </p>
@@ -146,7 +146,7 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ---
 
-### 📝 Signup Flow
+### Signup Flow
 <p align="center">
   <img src="./assets/Auth.png" alt="Signup Flow" width="100%" />
 </p>
@@ -156,16 +156,16 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 ## Architectural Highlights
 
-### ⚡ High-Performance Go Backend
+### High-Performance Go Backend
 The backend is engineered using **Go** and the **Gin Gonic** framework, chosen for its ultra-low latency and efficient handling of high-concurrency requests. It serves as a robust RESTful gateway, orchestrating data flow between the interactive frontend and the geospatial database.
 
-### 🗺️ Advanced Geospatial Engine
+### Advanced Geospatial Engine
 Leveraging **Leaflet.js** and **React-Leaflet**, the platform provides an immersive map experience. It features custom-built society layer toggles using **WMS (Web Map Service)** overlays, allowing users to visualize complex housing society boundaries with precision.
 
-### 🔐 Enterprise-Grade Security
+### Enterprise-Grade Security
 Authentication is handled via **JWT (JSON Web Tokens)** with a focus on security and persistent UX. Secure, HTTP-only cookie management ensures sessions remain protected while providing a seamless user experience across browser restarts.
 
-### 🎨 Modern Component Architecture
+### Modern Component Architecture
 Built with **Next.js 16 (App Router)** and **Tailwind CSS 4**, the frontend follows an atomic design pattern. By utilizing **Material UI (MUI)** for complex components and **Lucide** for intuitive iconography, the platform achieves a pixel-perfect, responsive interface.
 
 ---
