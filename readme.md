@@ -240,7 +240,7 @@ Authentication is architected using **JWT (JSON Web Tokens)** with a sophisticat
 The ecosystem features a robust subscription-based monetization model with a variety of plan tiers. It includes a custom-built payment gateway integration for **JazzCash**, enabling seamless, secure, and localized transaction processing for plan upgrades and featured ad placements.
 
 ### Modern Component Architecture
-Built with **Next.js 16 (App Router)** and **Tailwind CSS 4**, the frontend follows an atomic design pattern. By utilizing **Material UI (MUI)** for complex components and **Lucide** for intuitive iconography, the platform achieves a pixel-perfect, responsive interface.
+Built with **Next.js 16 (App Router)** and **Tailwind CSS 4**, the frontend follows an atomic design pattern. By utilizing **Tailwind CSS 4** for utility-first styling and **Material UI (MUI)** for complex components, the platform achieves a pixel-perfect, highly maintainable, and responsive interface.
 
 ---
 
@@ -250,9 +250,11 @@ Built with **Next.js 16 (App Router)** and **Tailwind CSS 4**, the frontend foll
 |---|---|
 | Framework | Next.js 16.1.4 (App Router) |
 | Backend | Go (Gin) RESTful API |
-| Payment Gateway | JazzCash |
+| Payment Gateway | JazzCash Integration |
+| Deployment | Docker, PM2 |
+| CI/CD | GitHub Actions Pipelines |
 | Admin Stack | Next.js, Zustand, Recharts, React Quill |
-| UI Library | React 19.2.3 |
+| UI Library | React 19.2.3, Material UI (MUI) |
 | Language | TypeScript 5 |
 | Styling | Tailwind CSS 4.1.18 |
 | Component Library | Material UI (MUI) 7.3.6 |
