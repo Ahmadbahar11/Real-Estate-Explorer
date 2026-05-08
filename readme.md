@@ -8,11 +8,9 @@
 
 <p align="center">
   <a href="#overview">Overview</a> •
-  <a href="#assets">assets</a> •
-  <a href="#features">Features</a> •
+  <a href="#assets">Assets</a> •
   <a href="#tech-stack">Tech Stack</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#docker-deployment">Docker</a>
+  <a href="#author">Author</a>
 </p>
 
 ---
@@ -20,19 +18,8 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [assets](#assets)
-- [Features](#features)
+- [Assets](#assets)
 - [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Pages & Routes](#pages--routes)
-- [Component Architecture](#component-architecture)
-- [Authentication System](#authentication-system)
-- [Map System](#map-system)
-- [API Integration](#api-integration)
-- [State Management](#state-management)
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Docker Deployment](#docker-deployment)
 - [Author](#author)
 
 ---
@@ -61,7 +48,7 @@ Built as a **Next.js App Router** frontend communicating with a backend REST API
 
 ---
 
-## assets
+## Assets
 
 > 📸 Add your images to the `assets/` folder in the project root and they will render automatically below.
 
@@ -165,63 +152,6 @@ Built as a **Next.js App Router** frontend communicating with a backend REST API
 > Registration flow for individual users and agents, including the two-step agency onboarding with company details.
 
 
-## Features
-
-### 🏘️ Property Browsing
-- Browse properties for **sale** and **rent**
-- Filter by property type, city, price range, and intent
-- **Featured Properties** section on the homepage
-- **Premium Properties** section with a dedicated page
-- Property detail page with full information, images, location, and nearby amenities
-
-### 🗺️ Interactive Map
-- Full-screen **Leaflet** map
-- Switch between **base map styles** (Satellite, Street, Terrain)
-- Toggle **WMS society layers** to visualize housing society boundaries
-- **Property pins** on the map with color-coded property types
-- **Opacity control** for overlay layers
-- **Locate me** button (GPS geolocation)
-- **Copy URL** of current map view for shareable deep-links
-- **Place marker** tool for custom location pinning
-- Built-in **measurement tools** (distance and area)
-- Society label markers with zoom-aware visibility
-
-### 🔐 Authentication
-- **Login** with email and password
-- **Individual Signup** for regular users
-- **Agent/Agency Signup** with a multi-step flow:
-- **Country/State/City** dropdowns for location selection
-- **Secure session management** using persistent authentication cookies
-- **Automatic authentication handling** for all user requests
-
-### 👤 Agents & Agencies
-- Browse all agents and agencies
-- **Top-rated agencies** section
-- **New agencies** spotlight section
-- **Browse agents by city**
-- Individual **agent profile page** with listings and contact info
-- Staff carousel within agency profiles
-
-### 🏙️ Societies
-- Browse all housing societies
-- Filter societies by **city**
-- Individual **society detail page** with map integration
-- Society layer toggle directly from the map
-
-### 📄 Content Pages
-- **About Us** — company information
-- **Contact Us** — contact form
-- **Legal Documentation** — property legal guides
-- **Real Estate Media** — media/news section
-- **Properties Transfer Process** — step-by-step guides
-
-### ⚡ UX & Performance
-- Skeleton loaders during data fetch
-- Toast notifications for success/error feedback
-- Fully **responsive** design (mobile, tablet, desktop)
-- Dynamic imports for heavy client-side components (map)
-- Breadcrumb navigation on inner pages
-
 ---
 
 ## Tech Stack
@@ -242,19 +172,8 @@ Built as a **Next.js App Router** frontend communicating with a backend REST API
 | Icons | Lucide React 0.561.0 + react-icons 5.5.0 |
 | Containerization | Docker (Node 20 Alpine) |
 
-
-## Project Architecture
-The project follows a modular architecture for scalability and maintainability, separating concerns between UI components, state management, and external service integrations.
-
-## Map System
-The core map experience is built with industry-standard geospatial tools, providing high-performance rendering of property locations and society boundaries with intuitive user controls.
-
-## API Integration
-All data is fetched from a secure central backend service, ensuring consistent and up-to-date property information across the entire platform.
-
-## State Management
-Global application state is managed efficiently to handle user sessions, map configurations, and property search results seamlessly.
 ---
+
 ## Author
 
 **Ahmad Bahar**
