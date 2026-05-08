@@ -34,6 +34,11 @@ Real Estate Explorer is a cutting-edge property marketplace architecture. It bri
 
 Built with a highly scalable Next.js App Router architecture communicating with a high-concurrency Go (Gin) backend, it features:
 
+- ### AI-Powered Insights
+  - **Intelligent Recommendations**: Machine learning algorithms that suggest properties based on user behavior and preferences.
+  - **Smart Market Analysis**: Real-time property valuation and trends prediction using historical data points.
+  - **Automated Lead Scoring**: Predictive analysis to prioritize high-intent leads for agents.
+
 - Immersive Geospatial Interface: Interactive map powered by Leaflet with optimized WMS society layer overlays.
 - Intelligent Property Mapping: Advanced pin clustering and dynamic color-coded markers for enhanced UX.
 - Enterprise Onboarding: Streamlined, multi-step agent and agency verification flows.
@@ -51,6 +56,7 @@ The Admin Portal is an enterprise-grade web interface used to operate the entire
 ### Key Management Modules
 
 - **User & Permissions**: Advanced administration of system users, agents, and customers with granular RBAC and permission gating.
+- **AI Analytics & Insights**: Integrated reporting tools for monitoring platform growth and user engagement trends.
 - **Lead Lifecycle Management**: Intelligent tracking from acquisition to conversion with automated agent assignment.
 - **Monetization Engine**: Integrated subscription plans with automated billing and **JazzCash** payment integration.
 - **Agent Ecosystem**: Comprehensive management of agents and sub-agent hierarchies with drill-down capabilities.
@@ -166,7 +172,7 @@ The Admin Portal is an enterprise-grade web interface used to operate the entire
 
 ---
 
-### Admin Dashboard
+### Agent Dashboard
 <p align="center">
   <img src="./assets/Agent-Dashboard.png" alt="Admin Dashboard" width="100%" />
 </p>
