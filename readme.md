@@ -259,7 +259,7 @@ Global application state is managed efficiently to handle user sessions, map con
 
 **Ahmad Bahar**
 - GitHub: [@Ahmadbahar11](https://github.com/Ahmadbahar11)
-- Email: m.zubair@neuronixtech.com
+- Email: ahmadbahar480@gmail.com
 
 ---
 
