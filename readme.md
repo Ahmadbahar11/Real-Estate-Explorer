@@ -1,6 +1,6 @@
 # Real Estate Explorer
 
-> A **high-performance**, map-first real estate ecosystem engineered with **Next.js 16** and **Tailwind CSS 4**, delivering a seamless, **enterprise-grade** property discovery experience.
+> A high-performance, map-first real estate ecosystem engineered with Next.js 16 and Tailwind CSS 4, delivering a seamless, enterprise-grade property discovery and management experience.
 
 <p align="center">
   <img src="./assets/Home-Page-Main.png" alt="Real Estate Explorer" width="100%" />
@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="#overview">Overview</a> •
+  <a href="#admin-portal">Admin Portal</a> •
   <a href="#assets">Assets</a> •
   <a href="#architectural-highlights">Highlights</a> •
   <a href="#tech-stack">Tech Stack</a> •
@@ -19,6 +20,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Admin Portal](#admin-portal)
 - [Assets](#assets)
 - [Architectural Highlights](#architectural-highlights)
 - [Tech Stack](#tech-stack)
@@ -28,25 +30,34 @@
 
 ## Overview
 
-**Real Estate Explorer** is a **cutting-edge** property marketplace architecture. It bridges the gap between traditional property listings and **next-gen geospatial discovery** — empowering users with **real-time interactivity** and **data-driven** insights directly on a live map.
+Real Estate Explorer is a cutting-edge property marketplace architecture. It bridges the gap between traditional property listings and next-gen geospatial discovery — empowering users with real-time interactivity and data-driven insights directly on a live map.
 
-Built with a **highly scalable** Next.js App Router architecture communicating with a **high-concurrency Go (Gin)** backend, it features:
+Built with a highly scalable Next.js App Router architecture communicating with a high-concurrency Go (Gin) backend, it features:
 
-- **Immersive Geospatial Interface**: Interactive map powered by Leaflet with optimized WMS society layer overlays.
-- **Intelligent Property Mapping**: Advanced pin clustering and dynamic color-coded markers for enhanced UX.
-- **Enterprise Onboarding**: Streamlined, multi-step agent and agency verification flows.
-- **State-of-the-Art Security**: JWT-based authentication with **highly secure**, persistent session management.
-- **Pixel-Perfect Responsiveness**: Adaptive UI with fluid layouts and high-performance skeleton loading states.
+- Immersive Geospatial Interface: Interactive map powered by Leaflet with optimized WMS society layer overlays.
+- Intelligent Property Mapping: Advanced pin clustering and dynamic color-coded markers for enhanced UX.
+- Enterprise Onboarding: Streamlined, multi-step agent and agency verification flows.
+- State-of-the-Art Security: JWT-based authentication with highly secure, persistent session management.
+- Pixel-Perfect Responsiveness: Adaptive UI with fluid layouts and high-performance skeleton loading states.
 
-> **Note:** This is a proprietary, company-confidential project built for a private client. Source code and deployment are for internal use only.
+> Note: This is a proprietary, company-confidential project built for a private client. Source code and deployment are for internal use only.
 
-### Who Is It For?
+---
 
-| User Type | What They Can Do |
-|---|---|
-| Buyers / Renters | Search and browse properties via map or list view, filter by city, type, and price |
-| Agents & Agencies | Create a profile, list properties, and manage ads |
-| Visitors | Explore societies, view property details, and contact agents |
+## Admin Portal
+
+The Admin Portal is an enterprise-grade web interface used to operate the entire PlotsMap platform. It provides role-based access to manage complex data lifecycles and platform configurations.
+
+### Key Management Modules
+
+- **User & Permissions**: Advanced administration of system users, agents, and customers with granular RBAC and permission gating.
+- **Lead Lifecycle Management**: Intelligent tracking from acquisition to conversion with automated agent assignment.
+- **Monetization Engine**: Integrated subscription plans with automated billing and **JazzCash** payment integration.
+- **Agent Ecosystem**: Comprehensive management of agents and sub-agent hierarchies with drill-down capabilities.
+- **Property & Ad Operations**: Map-based ad placement, marker layer controls, and property detail management with map picker integration.
+- **Financial Systems**: Full transaction auditing, plan management, and subscription lifecycle tracking.
+- **Geospatial & Project Management**: Administration of housing societies, infrastructure projects, location parameters, and interested areas.
+- **Centralized Settings**: Global configuration for system users, customer profiles, and geographic location mapping.
 
 ---
 
@@ -153,6 +164,60 @@ Built with a **highly scalable** Next.js App Router architecture communicating w
 
 > Registration flow for individual users and agents, including the two-step agency onboarding with company details.
 
+---
+
+### Admin Dashboard
+<p align="center">
+  <img src="./assets/Agent-Dashboard.png" alt="Admin Dashboard" width="100%" />
+</p>
+
+> Enterprise analytics dashboard providing real-time oversight of platform metrics, user activities, and financial performance.
+
+---
+
+### Leads Management
+<p align="center">
+  <img src="./assets/Agent-Dealing.png" alt="Leads Management" width="100%" />
+</p>
+
+> Advanced lead tracking system with role-based assignment workflows and conversion analytics.
+
+---
+
+### Property Operations
+<p align="center">
+  <img src="./assets/Property-Management.png" alt="Property Management" width="100%" />
+</p>
+
+> Centralized property management hub for auditing listings, approving advertisements, and map-based placement controls.
+
+---
+
+### Ad Management & Visualization
+<p align="center">
+  <img src="./assets/Ads-Management.png" alt="Ad Management" width="100%" />
+</p>
+
+> Specialized interface for managing premium ad placements, configuring map-based visibility, and tracking advertisement performance.
+
+---
+
+### Plans & Subscriptions
+<p align="center">
+  <img src="./assets/Plans-Subscription.png" alt="Plans and Subscriptions" width="100%" />
+</p>
+
+> Management interface for subscription tiers, localized payment processing, and user plan lifecycle tracking.
+
+---
+
+### Plan Configuration
+<p align="center">
+  <img src="./assets/Plans-Management.png" alt="Plans Management" width="100%" />
+</p>
+
+> Administrative tools for defining service plans, feature sets, and monetization parameters.
+
 
 ## Architectural Highlights
 
@@ -162,8 +227,11 @@ The backend is engineered using **Go** and the **Gin Gonic** framework, chosen f
 ### Advanced Geospatial Engine
 Leveraging **Leaflet.js** and **React-Leaflet**, the platform provides an immersive map experience. It features custom-built society layer toggles using **WMS (Web Map Service)** overlays, allowing users to visualize complex housing society boundaries with precision.
 
-### Enterprise-Grade Security
-Authentication is handled via **JWT (JSON Web Tokens)** with a focus on security and persistent UX. Secure, HTTP-only cookie management ensures sessions remain protected while providing a seamless user experience across browser restarts.
+### Enterprise-Grade Security & Role-Based Access
+Authentication is architected using **JWT (JSON Web Tokens)** with a sophisticated **Role-Based Access Control (RBAC)** system. The platform distinguishes between multiple user personas—including **Super Admins**, **Agencies**, **Individual Agents**, **Sub-agents**, and **End-Customers**—each with granular permission sets. Secure, HTTP-only cookie management ensures sessions remain protected while providing a seamless, persistent user experience.
+
+### Advanced Fintech Integration
+The ecosystem features a robust subscription-based monetization model with a variety of plan tiers. It includes a custom-built payment gateway integration for **JazzCash**, enabling seamless, secure, and localized transaction processing for plan upgrades and featured ad placements.
 
 ### Modern Component Architecture
 Built with **Next.js 16 (App Router)** and **Tailwind CSS 4**, the frontend follows an atomic design pattern. By utilizing **Material UI (MUI)** for complex components and **Lucide** for intuitive iconography, the platform achieves a pixel-perfect, responsive interface.
@@ -176,6 +244,8 @@ Built with **Next.js 16 (App Router)** and **Tailwind CSS 4**, the frontend foll
 |---|---|
 | Framework | Next.js 16.1.4 (App Router) |
 | Backend | Go (Gin) RESTful API |
+| Payment Gateway | JazzCash |
+| Admin Stack | Next.js, Zustand, Recharts, React Quill |
 | UI Library | React 19.2.3 |
 | Language | TypeScript 5 |
 | Styling | Tailwind CSS 4.1.18 |
@@ -199,4 +269,4 @@ Built with **Next.js 16 (App Router)** and **Tailwind CSS 4**, the frontend foll
 
 ---
 
-> 🔒 This is a confidential project built for a private client. Unauthorized distribution is not permitted.
+> This is a confidential project built for a private client. Unauthorized distribution is not permitted.
